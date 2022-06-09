@@ -1,0 +1,11 @@
+{
+  "presets": [
+      "@babel/preset-env", // allows you to use the latest JavaScript without needing to specify and match what is needed by your target environment
+      "@babel/preset-react" // pre-set for react/babel compatibilty
+  ],
+  "plugins": [
+      "@babel/plugin-syntax-dynamic-import", // tells babel to allow dynamic import syntax
+      "@babel/plugin-transform-runtime", // enables the re-use of Babel's injected helper code to save on codesize aka saves time on the runtime on your app
+      "@babel/plugin-transform-async-to-generator" // this transforms async functions into promises => es5
+  ]
+}
